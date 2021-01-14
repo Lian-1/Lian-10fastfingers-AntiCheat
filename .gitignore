@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Lian  10fastfingers AntiCheat
 // @description  Coming soon 1.1
-// @namespace    https://github.com/FarisHijazi
+// @namespace    https://github.com/Lian-1
 // @author       Lian
 // @version      1.0
 // @icon         https://www.freelogodesign.org/file/app/client/thumb/049ee4bd-9ca7-4b55-8b12-3738209b0173_200x200.png?1610582367606">
@@ -27,6 +27,7 @@
  */
 
 
+/*
 
  */
 
@@ -274,7 +275,7 @@ function unsafeEval(func, ...arguments) {
                 'height': '100px',
                 'font-family': 'monospace',
                 'font-size': '-webkit-xxx-large',
-                'color': 'green',
+                'color': 'Blue',
             })
             .text('Lian!')
             .click(function (e) { //
