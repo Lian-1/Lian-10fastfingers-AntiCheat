@@ -1,8 +1,8 @@
-/*! DrewSnow v0.0.1 | (c) https://github.com/SnowLord7 */
+/*! Lian v0.0.1 | (c) https://github.com/Lian-1 */
 let _extensionVersion = 1590784983652;
 
 /**
- * Library by Drew Snow for miscellaneous uses 
+ * Library by Lian for miscellaneous uses 
  * @namespace Modules
  */
 
@@ -528,7 +528,7 @@ let _extensionVersion = 1590784983652;
 			console.timeEnd(timer);
 		}
 	};
-	window.drewsnow.init();
+	window.Lian.init();
 }();
 function Alert(header, content) {
 	let container = document.createElement('div');
@@ -620,7 +620,7 @@ Object.defineProperty(String.prototype, 'hashCode', {
 });
 window.settings = {
 	'default': {
-		'developer': 'Drew Snow',
+		'developer': 'Lian',
 		'gravity': { 'score': 4294967295 },
 		'learn': { 'speed': 100 },
 		'live': { 'answerDelay': 100, 'autoAnswer': true, 'displayAnswer': true, 'key': 67 },
@@ -629,7 +629,7 @@ window.settings = {
 		'test': { 'key': 67 }
 	},
     'current': {
-		'developer': 'Drew Snow',
+		'developer': 'Lian',
 		'gravity': { 'score': 4294967295 },
 		'learn': { 'speed': 100 },
 		'live': { 'answerDelay': 100, 'autoAnswer': true, 'displayAnswer': true, 'key': 67 },
@@ -668,7 +668,7 @@ window.settings = {
 settings.fix();
 
 ~function () {
-	let style = drewsnow.css(`
+	let style = Lian.css(`
         #extensionSettingsContainer {
 			transition: transform 1s ease;
 			transform: translateY(355px);
@@ -732,7 +732,7 @@ settings.fix();
         }
     `);
 
-	let container = drewsnow.html(`
+	let container = Lian.html(`
 		<div id="extensionSettingsContainer">
 			<span class="extensionMenuItem" id="extensionExitButton">&times;</span>
 			<span class="extensionMenuItem" id="extensionResetButton">&#8634;</span>
@@ -769,13 +769,13 @@ settings.fix();
     document.getElementById('extensionSettingsTitle').addEventListener('dblclick', () => {
         try {
             let session = new Debug();
-            prompt('Copy this and send it to Drew Snow', session.run());
+            prompt('Copy this and send it to Lian', session.run());
         } catch (e) { prompt('Copy this and send it to Drew Snow', e); }
     });
 
 	document.getElementById('extensionResetButton').onclick = () => {
 		localStorage.setItem('extensionSettings', JSON.stringify({
-			'developer': 'Drew Snow',
+			'developer': 'Lian',
 			'gravity': { 'score': 4294967295 },
 			'learn': { 'speed': 100 },
 			'live': { 'answerDelay': 100, 'autoAnswer': true, 'displayAnswer': true, 'key': 67 },
@@ -792,7 +792,7 @@ settings.fix();
 
 	document.getElementById('saveSettings').onclick = () => {
 		localStorage.setItem('extensionSettings', JSON.stringify({
-			"developer": "Drew Snow",
+			"developer": "Lian",
 			"gravity": {
 				"score": Number(document.getElementById('gravityScoreInput').value)
 			},
@@ -815,7 +815,7 @@ settings.fix();
 		}));
 	};
 
-	let settings = JSON.parse(localStorage.getItem('extensionSettings')) || { "developer": "Drew Snow", "gravity": { "score": 4294967295 }, "learn": { "speed": 700 }, "live": { "answerDelay": 100, "autoAnswer": 1, "displayAnswer": 1, "key": "c" }, "match": { "time": 0.5 }, "night": false, "test": { "key": "c" } };
+	let settings = JSON.parse(localStorage.getItem('extensionSettings')) || { "developer": "Lian", "gravity": { "score": 4294967295 }, "learn": { "speed": 700 }, "live": { "answerDelay": 100, "autoAnswer": 1, "displayAnswer": 1, "key": "c" }, "match": { "time": 0.5 }, "night": false, "test": { "key": "c" } };
 	document.getElementById('gravityScoreInput').value = settings.gravity.score;
 	document.getElementById('learnSpeedInput').value = settings.learn.speed;
 	document.getElementById('liveDelayInput').value = settings.live.answerDelay;
@@ -1608,8 +1608,8 @@ Spell.prototype.input = () => {
 
 Spell.prototype.alert = function () {
 	Alert(
-		'SnowLord\'s Quizlet Extension',
-		`<h2>Game Mode: Spell</h2>Thank you for using SnowLord7's Quizlet Exploit<br>Without you, this exploit wouldn't be possible.<br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>`
+		'Lian\'s Quizlet Extension',
+		`<h2>Game Mode: Spell</h2>Thank you for using Lian's Quizlet Exploit<br>Without you, this exploit wouldn't be possible.<br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>`
 	);
 }
 
