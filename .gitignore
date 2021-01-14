@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name        Lian  10fastfingers AntiCheat
+// @name        Lian  10fastfingers Cheat
 // @description  Coming soon 1.1
 // @namespace    https://github.com/Lian-1
 // @author       Lian
 // @version      1.0
-// @icon         https://www.freelogodesign.org/file/app/client/thumb/049ee4bd-9ca7-4b55-8b12-3738209b0173_200x200.png?1610582367606">
+// @icon         https://media.giphy.com/media/iHVzXj3Ayzl9W4GAXw/giphy.gif">
 // @match        https://10fastfingers.com*
 // @include      https://10fastfingers.com*
 // @grant        unsafeWindow
@@ -23,7 +23,7 @@
  * Notices:
  * - This script is made purely for educational purposes
  * - This script uses Tesseract.js (https://tesseract.projectnaptha.com/)
- * - Inspired by https://gist.github.com/kecebongsoft/1510198
+ * - Inspired by https://github.com/Lian-1/Lian-10fastfingers-AntiCheat
  */
 
 
@@ -275,9 +275,9 @@ function unsafeEval(func, ...arguments) {
                 'height': '100px',
                 'font-family': 'monospace',
                 'font-size': '-webkit-xxx-large',
-                'color': 'Blue',
+                'color': 'blue',
             })
-            .text('Lian!')
+            .text('Lian')
             .click(function (e) { //
                 addBg();
 
@@ -313,7 +313,7 @@ function unsafeEval(func, ...arguments) {
                 'height': '100px',
                 'font-family': 'monospace',
                 'font-size': '-webkit-xxx-large',
-                'color': 'green',
+                'color': 'blue',
             })
             .text('Lian!')
             .click(function (e) {
